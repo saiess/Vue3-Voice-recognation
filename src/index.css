@@ -60,3 +60,7 @@ body{
     padding: .75rem 2rem;
   }
 }
+
+.microphone {
+  display: flex;
+}
