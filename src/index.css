@@ -45,8 +45,8 @@ body{
 }
 
 #mic:hover {
-  background-color: #FFC229;
-  box-shadow: #FF6314 0 -6px 8px inset;
+  background-color: #22d3ee;
+  box-shadow: #aba8d8 0 -6px 8px inset;
   transform: scale(1.125);
 }
 
