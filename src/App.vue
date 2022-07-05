@@ -37,7 +37,7 @@
 
   const checkForCommand = (result: any) => {
     const t = result[0].transcript;
-    if (t.includes('stop')) {
+    if (t.includes('stop recording')) {
       speech.stop();
     }
     else if (
@@ -60,8 +60,8 @@
 
 <template>
   <div class="h-screen flex justify-center items-center bg-gradient-to-r from-indigo-700 via-green-800 to-cyan-600">
-    <div class="flex justify-around items-center flex-col w-3/5 h-3/5">
-      <h1 class="text-white text-3xl font-bold">Say somthing like (what is the time) & stop to </h1>
+    <div class="flex justify-around items-center flex-col w-4/5 h-3/5">
+      <h1 class="text-white text-3xl font-bold">Say somthing like (what is the time) & stop recording to stop</h1>
         <button :class="microphone" id="mic" @click="ToggleMic">Record</button>
       <div class="w-full">
         <div class="transcript w-full p-8 text-gray-800 font-bold bg-slate-200 rounded-xl h-96" v-text="transcript">
