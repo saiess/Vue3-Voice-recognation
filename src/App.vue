@@ -63,8 +63,8 @@
     <div class="flex justify-around items-center flex-col w-4/5 h-3/5">
       <h1 class="text-white text-3xl font-bold">Say somthing like (what is the time) & stop recording to stop</h1>
         <button :class="microphone" id="mic" @click="ToggleMic">Record</button>
-      <div class="w-full">
-        <div class="transcript w-full p-8 text-gray-800 font-bold bg-slate-200 rounded-xl h-96" v-text="transcript">
+      <div class="w-full flex justify-center">
+        <div class="transcript w-4/5 p-8 text-gray-800 font-bold bg-slate-200 rounded-xl h-96" v-text="transcript">
           
         </div>
       </div>
